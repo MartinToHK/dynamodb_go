@@ -6,6 +6,13 @@ import(
 	"strings"
 	"io"
 	"time"
+	"github.com/aws/aws-sdk-go/aws"
+	"github.com/aws/aws-sdk-go/service/dynamodb"
+	Validation "github.com/go-ozzo/ozzo-validation/v4"
+	"github.com/go-ozzo/ozzo-validation/v4/is"
+	"github.com/google/uuid"
+	"github.com/MartinToHK/dynamodb_go/internal/entities"
+	"github.com/MartinToHK/dynamodb_go/internal/entities/product"
 )
 
 type Rules struct{}
